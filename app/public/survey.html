@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="h1">Survey Questions</header>
+    <form class="form" action="/action_page.php">
+        <p class="h2">About You</p>
+        <div class="form-group">
+            <label for="username" class="h6">Name (Required)</label>
+            <input type="name" class="form-control" id="username" placeholder="Jackie Chan">
+        </div>
+        <div class="form-group">
+            <label for="userpicture" class="h6">Link to Photo Image (Required)</label>
+            <input type="link" class="form-control" id="userpicture" 
+            placeholder="Picture link here">
+        </div>
+        <div class="form-group">
+            <label for="sel1">You enjoy doing things you've never done before.</label>
+            <select class="form-control" id="sel1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="sel2">You like to make plans and stick to them.</label>
+            <select class="form-control" id="sel2">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="sel3">You enjoy outdoor activities more than indoors.</label>
+            <select class="form-control" id="sel3">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="sel4">You enjoy doing things you've never done before.</label>
+            <select class="form-control" id="sel4">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="sel5">You like to make plans and stick to them.</label>
+            <select class="form-control" id="sel5">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="sel6">You enjoy outdoor activities more than indoors.</label>
+            <select class="form-control" id="sel6">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="sel7">You enjoy doing things you've never done before.</label>
+            <select class="form-control" id="sel7">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="sel8">You like to make plans and stick to them.</label>
+            <select class="form-control" id="sel8">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="sel9">You enjoy outdoor activities more than indoors.</label>
+            <select class="form-control" id="sel9">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="sel10">You enjoy outdoor activities more than indoors.</label>
+            <select class="form-control" id="sel10">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <br></br>
+        <!-- <button type="submit" class="btn btn-default" id="submitSurvey">Submit</button> -->
+    </form>
+    <!-- Button trigger modal -->
+    <button type="submit" id="submitSurvey" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+        Submit
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="myModalLabel">Best Match</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5>Namety-Name</h5>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+<script>
+
+    $("#submitSurvey").on("click", function (e) {
+        event.preventDefault()
+        var data = {
+            name: $("#username").val(),
+            piclink: $("#userpicture").val(),
+            scores: [$("#sel1").val(),
+            $("#sel2").val(),
+            $("#sel3").val(),
+            $("#sel4").val(),
+            $("#sel5").val(),
+            $("#sel6").val(),
+            $("#sel7").val(),
+            $("#sel8").val(),
+            $("#sel9").val(),
+            $("#sel10").val()]
+        };
+        console.log(data);
+        $.post("/api/friendslist", data, function(response) {
+            console.log("response", response);
+        })    
+    })
+
+</script>
+
+</html>
