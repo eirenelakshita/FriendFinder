@@ -17,121 +17,124 @@
 
 <body>
     <header class="h1">Survey Questions</header>
-    <form class="form" action="/action_page.php">
-        <p class="h2">About You</p>
-        <div class="form-group">
-            <label for="username" class="h6">Name (Required)</label>
-            <input type="name" class="form-control" id="username" placeholder="Jackie Chan">
-        </div>
-        <div class="form-group">
-            <label for="userpicture" class="h6">Link to Photo Image (Required)</label>
-            <input type="link" class="form-control" id="userpicture" placeholder="Picture link here">
-        </div>
-        <div class="form-group">
-            <label for="sel1">You enjoy doing things you've never done before.</label>
-            <select class="form-control" id="sel1">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="sel2">You like to make plans and stick to them.</label>
-            <select class="form-control" id="sel2">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="sel3">You enjoy outdoor activities more than indoors.</label>
-            <select class="form-control" id="sel3">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="sel4">You enjoy doing things you've never done before.</label>
-            <select class="form-control" id="sel4">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="sel5">You like to make plans and stick to them.</label>
-            <select class="form-control" id="sel5">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="sel6">You enjoy outdoor activities more than indoors.</label>
-            <select class="form-control" id="sel6">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="sel7">You enjoy doing things you've never done before.</label>
-            <select class="form-control" id="sel7">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="sel8">You like to make plans and stick to them.</label>
-            <select class="form-control" id="sel8">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="sel9">You enjoy outdoor activities more than indoors.</label>
-            <select class="form-control" id="sel9">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="sel10">You enjoy outdoor activities more than indoors.</label>
-            <select class="form-control" id="sel10">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
-        </div>
-        <br></br>
-        <!-- <button type="submit" class="btn btn-default" id="submitSurvey">Submit</button> -->
-    </form>
+    <div class="row" style="margin: 50px">
+        <form class="form" action="/action_page.php">
+            <p class="h2">About You</p>
+            <div class="form-group">
+                <label for="username" class="h6">Name (Required)</label>
+                <input type="name" class="form-control col-lg-6" id="username" placeholder="Jackie Chan">
+            </div>
+            <div class="form-group">
+                <label for="userpicture" class="h6">Link to Photo Image (Required)</label>
+                <input type="link" class="form-control col-lg-6" id="userpicture" placeholder="Picture link here">
+            </div>
+            <div class="form-group">
+                <label for="sel1">You enjoy doing things you've never done before.</label>
+                <select class="form-control col-lg-3" id="sel1">
+                    <option value="1">1 (strongly disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (strongly agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="sel2">You like to make plans and stick to them.</label>
+                <select class="form-control col-lg-3" id="sel2">
+                    <option value="1">1 (strongly disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (strongly agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="sel3">You enjoy outdoor activities more than indoors.</label>
+                <select class="form-control col-lg-3" id="sel3">
+                    <option value="1">1 (strongly disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (strongly agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="sel4">You find it easy to stay relaxed and focused even when there is some pressure.</label>
+                <select class="form-control col-lg-3" id="sel4">
+                    <option value="1">1 (strongly disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (strongly agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="sel5">People can rarely upset you.</label>
+                <select class="form-control col-lg-3" id="sel5">
+                    <option value="1">1 (strongly disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (strongly agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="sel6">It is often difficult for you to relate to other people’s feelings.</label>
+                <select class="form-control col-lg-3" id="sel6">
+                    <option value="1">1 (strongly disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (strongly agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="sel7">In a discussion, truth should be more important than people’s sensitivities.</label>
+                <select class="form-control col-lg-3" id="sel7">
+                    <option value="1">1 (strongly disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (strongly agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="sel8">You rarely get carried away by fantasies and ideas.</label>
+                <select class="form-control col-lg-3" id="sel8">
+                    <option value="1">1 (strongly disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (strongly agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="sel9">You think that everyone’s views should be respected regardless of whether they are supported by facts or
+                    not.</label>
+                <select class="form-control col-lg-3" id="sel9">
+                    <option value="1">1 (strongly disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (strongly agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="sel10">You enjoy outdoor activities more than indoors.</label>
+                <select class="form-control col-lg-3" id="sel10">
+                    <option value="1">1 (strongly disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (strongly agree)</option>
+                </select>
+            </div>
+            <br></br>
+            <!-- <button type="submit" class="btn btn-default" id="submitSurvey">Submit</button> -->
+        </form>
+    </div>
     <!-- Button trigger modal -->
-    <button type="submit" id="submitSurvey" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+    <button type="submit" id="submitSurvey" style="margin: 50px" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
         Submit
     </button>
 
@@ -146,7 +149,12 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <h5 id="nameDisplay"><span>Name</span></h5>
+                    <h5 id="nameDisplay">
+                        <span>Name</span>
+                    </h5>
+                    <div id="imageDisplay">
+                        <image id="matchDisplay" style="max-width: 250px; height: auto;" src="https://imgplaceholder.com/420x320/ff7f7f/333333/fa-image">
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -154,6 +162,10 @@
             </div>
         </div>
     </div>
+    <footer class="footer">
+        <a href="/api/friendslist">API Friends List</a> |
+        <a href="https://github.com/gothicreinne/FriendFinder"> Bootstrap Info </a>
+    </footer>
 </body>
 
 
@@ -182,12 +194,29 @@
         });
         $.get("/api/friendslist", function (req, res) {
             matchName = req.bestMatch.name;
+            matchImage = req.bestMatch.piclink;
             $("#nameDisplay span").text(matchName);
+            console.log(matchImage);
+            $("#matchDisplay").attr("src", matchImage);
+
         });
+        $("#username").val(" ");
+        $("#userpicture").val(" ");
+        $("#sel1").val(" ");
+        $("#sel2").val(" ");
+        $("#sel3").val(" ");
+        $("#sel4").val(" ");
+        $("#sel5").val(" ");
+        $("#sel6").val(" ");
+        $("#sel7").val(" ");
+        $("#sel8").val(" ");
+        $("#sel9").val(" ");
+        $("#sel10").val(" ");
 
     })
 
-var matchName;
+    var matchName;
+    var matchImage;
 
 </script>
 

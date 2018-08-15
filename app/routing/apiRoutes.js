@@ -4,7 +4,7 @@ var path = require("path");
 var userData = [
     {
         name: "James Sullivan",
-        piclink: "",
+        piclink: "https://data.whicdn.com/images/282707200/superthumb.jpg?t=1490730464",
         scores: ["5",
             "4",
             "3",
@@ -18,7 +18,7 @@ var userData = [
     },
     {
         name: "Leah Hamilton",
-        piclink: "",
+        piclink: "https://viola.bz/wp-content/uploads/2011/11/Bond-woman-Monica-Bellucci-2-500x385.jpg",
         scores: ["5",
             "2",
             "4",
@@ -32,7 +32,7 @@ var userData = [
     },
     {
         name: "Kai",
-        piclink: "",
+        piclink: "https://vignette.wikia.nocookie.net/die-hard-scenario/images/a/aa/DHS-_Iko_Uwais_at_The_Raid_2_premiere.jpg/revision/latest/scale-to-width-down/250?cb=20140930014513",
         scores: ["1",
             "1",
             "1",
@@ -46,7 +46,7 @@ var userData = [
     },
     {
         name: "Yilian Ye",
-        piclink: "",
+        piclink: "https://i.pinimg.com/originals/4c/06/c7/4c06c704ec6e1017231326858fdcc0d1.jpg",
         scores: ["5",
             "4",
             "3",
@@ -97,6 +97,7 @@ router.route("/api/friendslist")
         var short = Math.min(...sumList);
         var shortIndex = sumList.indexOf(short);
         bestMatch.name = userData[shortIndex].name;
+        bestMatch.piclink = userData[shortIndex].piclink;
         console.log(short);
         console.log("Latest Best Match: " + bestMatch.name);
 
@@ -106,7 +107,8 @@ router.route("/api/friendslist")
     });
 
     var bestMatch = {
-        name: ""
+        name: "",
+        piclink: ""
     };
 
     module.exports =
